@@ -1,11 +1,5 @@
-# Sequence Length Analysis
-Usage: python3 count_resequence_analysiscords.py <filename>
+# Python-for-Bioinformatics
+The repository contains multiple useful code for day-to-day bioinformatics task. Below are the scripts currently avaiable.
 
-Description:
-This script analyzes the lengths of sequences in a FASTA file, identifying the longest and shortest sequences, their lengths, and their identifiers.
-
-Arguments:
-<filename>  The name of the file to process (e.g., a FASTA file).
-
-Example:
-python3 sequence_analysis.py dna.example.fasta
+1. Count-Records = The script counts the number of sequence records in a fasta file.
+2. Sequence-Length-Analysis = The script calculate the length of the longest and shortest sequence record in a fasta file.
