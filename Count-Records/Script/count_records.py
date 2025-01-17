@@ -29,8 +29,7 @@ filename = sys.argv[1]
 
 # Opening the file if exisit or print an error message
 try:
-    with open(filename, 'r') as file:
-        content = file.read()
+    file = open(filename, 'r')
 except FileNotFoundError:
     print("Error: The file %s does not exist." %filename)
     sys.exit()
@@ -41,9 +40,14 @@ recordCount = 0
 # Reading each line of a file one by one
 # Autoincrement the count if the new records are found
 
-for line in content:
+for line in file:
+    print(line)
     if line[0] == '>':
         recordCount += 1
+    print(recordCount)
+
+# Closing the file
+file.close()
 
 # Print the output
 print('There are %d records in the %s' % (recordCount, filename)) 
